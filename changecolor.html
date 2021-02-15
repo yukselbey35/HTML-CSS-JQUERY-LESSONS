@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Lesson</title>
+    <style>
+        .increaseFont{
+            font-size: 50px;
+            
+        }
+    </style>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+
+    <script>
+         /*$(document).ready(function)  == $(function)
+        The ready() method can only be used on the current document, so no selector is required:   
+        How to use = $(selector).action()
+        */
+        $(document).ready(function(){ //Jquery kodlarini bunun icerisine yaz
+
+            $(".changeRed").mouseover(function(){ //Select by class name: tag name is .changeRed
+                $(".changeRed").css({ background: "red", color: "white" }); // Select and Action
+            });
+            $(".changeRed").mouseout(function(){
+                $(".changeRed").css({ background: "white", color: "black" });
+            });
+
+            $(".changeBlue").mouseover(function(){
+                $(".changeBlue").css({ background: "#00F", color: "white" });
+            });
+            $(".changeBlue").mouseout(function(){
+                $(".changeBlue").css({ background: "white", color: "black" });
+            });
+
+
+
+        });
+
+    </script>
+    
+</head>
+<body>
+
+    <div id="outer">
+        The mouseover <span class="changeRed">event</span> <span class="changeBlue">is sent to an element </span> when the mouse pointer enters the element. Any HTML element can receive this event.
+        <br>
+        <p>
+            <span class="changeRed">What are Events?</span>
+            All the different visitors' actions that a web page can respond to are called events.
+
+            An event represents the precise moment when something happens.
+
+            Examples:
+
+            moving a mouse over an element
+            selecting a <span class="changeBlue">radio button</span>radio button
+            clicking on an element
+            The term "fires/fired" is often used with events. Example: "The keypress event is fired, the moment you press a key".
+        </p>
+        The mouseover <span class="changeRed">event</span> <span class="changeBlue">is sent to an element </span> when the mouse pointer enters the element. Any HTML element can receive this event.
+    </div>
+
+    <span class="increaseFont">&#8747;</span>
+    <span class="increaseFont">&#8750;</span>
+    <span class="increaseFont">&#256;</span>
+    <span class="increaseFont">&#270;</span>
+    
+</body>
+</html>
