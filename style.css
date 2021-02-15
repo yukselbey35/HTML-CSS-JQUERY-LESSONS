@@ -1,0 +1,186 @@
+/*Reset margin and padding*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*When we set the font-size all font-size of the html will effect from that by % 
+I can control font-size*/
+html{
+    font-size:7px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    font-size:1.6rem; /*16px*/
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+
+}
+/*All a elements will effect by none */
+a {
+    text-decoration: none;
+}
+p {
+    padding:1.6rem 0;
+    font-size: 2rem;
+
+}
+img{
+    width: 100%;
+    height: auto; /*Will set the height depend on width*/
+}
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*header */
+header{
+    height: 45rem;
+    padding:2rem;
+
+}
+
+header .bg-image{
+    position:absolute;
+    background-image: url(img/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.4;
+    z-index:-1;/*Send the pic back*/
+}
+header h1{
+    padding: 11rem;
+    padding-bottom: 0;
+
+
+#section-a:hover {
+	opacity: 0.7;
+	
+}
+}
+#brian{
+    padding: 3rem;
+}
+.btn { 
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    border:1px solid #666;
+    padding:1.6rem 3.2rem;
+    margin:0.5rem 0;
+    transition:all 0.4s;
+}
+
+.btn:hover {
+    background-color: #eaeaea;
+    color:#333;
+} 
+/*Section-a */
+#section-a{
+    background-color: #eaeaea;
+    color:#333;
+    padding: 3.2rem 0;
+    transition: opacity 0.4s linear;
+}
+
+#section-a:hover {
+	opacity: 0.7;
+	
+}
+
+/*section-b */
+#section-b{
+    padding:2rem;
+    transition: opacity 0.4s linear;		
+}
+
+#section-b:hover {
+	opacity: 0.7;
+	
+}
+
+
+#section-b ul{
+    list-style: none;
+}
+
+#section-b li{
+    background: #fff;
+    color:#333;
+    margin-bottom: 1.5rem;
+}
+.col-content{
+    padding: 1.5rem;
+}
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+
+/*Section-d */
+#section-d .box{
+    padding: 5rem;
+    background-color: rgb(37, 34, 34);
+}
+#section-d .box:first-child {
+    background-color:#3ca4e6;
+}
+/*footer */
+footer{
+    padding: 4rem;
+    background: #666;
+}
+footer a {
+    color:#111c9a;
+}
+
+/*Tablet view */
+@media screen and (min-width:800px){
+    html{
+        font-size:9px;
+    }
+}
+
+/*When the window get bigger than 700pixels my responsive will run 
+This is desktop view css*/
+@media screen and (min-width:1200px){
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
+    html{
+        font-size:12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

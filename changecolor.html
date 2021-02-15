@@ -38,6 +38,12 @@
                 $(".changeBlue").css({ background: "white", color: "black" });
             });
 
+            function firstLastName(){
+                var name=$("#name").val();
+                var lastname=$("#lastname").val();
+
+                window.alert("Your name is :"+name+" "+lastname)
+            }
 
 
         });
@@ -66,6 +72,12 @@
         The mouseover <span class="changeRed">event</span> <span class="changeBlue">is sent to an element </span> when the mouse pointer enters the element. Any HTML element can receive this event.
     </div>
 
+    <div id="getVal">
+        <input id="name" type="text" placeholder="Enter your name: "/>
+        <input id="lastname" type="text" placeholder="Last Name: "/>
+        <button id="btnSave" onclick="firstLastName();">Save</button>
+
+    </div>
     <span class="increaseFont">&#8747;</span>
     <span class="increaseFont">&#8750;</span>
     <span class="increaseFont">&#256;</span>
